@@ -5,8 +5,6 @@ module AuthHelper
 
   SCOPES = [ 'openid', 'https://outlook.office.com/mail.send' ]
 
-  REDIRECT_URI = 'http://localhost:3000/authorize'
-
   def get_login_url
     client = OAuth2::Client.new(CLIENT_ID,
                                 CLIENT_SECRET,
