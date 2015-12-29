@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :commands
   root 'application#hello'
 
   get "authorize" => "auth#gettoken"

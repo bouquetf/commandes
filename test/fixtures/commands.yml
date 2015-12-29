@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2015-12-29 10:50:33
+  description: MyString
+  limit_date: 2015-12-29 10:50:33
+  payment: MyString
+  state: MyString
+  total: 9.99
+
+two:
+  date: 2015-12-29 10:50:33
+  description: MyString
+  limit_date: 2015-12-29 10:50:33
+  payment: MyString
+  state: MyString
+  total: 9.99

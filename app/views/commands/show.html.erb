@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @command.date %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @command.description %>
+</p>
+
+<p>
+  <strong>Limit date:</strong>
+  <%= @command.limit_date %>
+</p>
+
+<p>
+  <strong>Payment:</strong>
+  <%= @command.payment %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @command.state %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @command.total %>
+</p>
+
+<%= link_to 'Edit', edit_command_path(@command) %> |
+<%= link_to 'Back', commands_path %>
