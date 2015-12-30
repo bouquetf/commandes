@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151229095033) do
+ActiveRecord::Schema.define(version: 20151229103206) do
+
+  create_table "answers", force: :cascade do |t|
+    t.string   "nickname"
+    t.string   "order"
+    t.decimal  "amount"
+    t.decimal  "payed"
+    t.integer  "command_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "answers", ["command_id"], name: "index_answers_on_command_id"
 
   create_table "commands", force: :cascade do |t|
     t.datetime "date",                                null: false

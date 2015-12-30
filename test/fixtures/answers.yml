@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nickname: MyString
+  order: MyString
+  amount: 9.99
+  payed: 9.99
+  command_id: 
+
+two:
+  nickname: MyString
+  order: MyString
+  amount: 9.99
+  payed: 9.99
+  command_id: 

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nickname:</strong>
+  <%= @answer.nickname %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @answer.order %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @answer.amount %>
+</p>
+
+<p>
+  <strong>Payed:</strong>
+  <%= @answer.payed %>
+</p>
+
+<%= link_to 'Edit', edit_command_answer_path(@command, @answer) %> |
+<%= link_to 'Back', command_answers_path(@command) %>
