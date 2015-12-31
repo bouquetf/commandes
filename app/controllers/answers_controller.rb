@@ -30,6 +30,7 @@ class AnswersController < ApplicationController
   # POST /answers.json
   def create
     @answer = @command.answers.new(answer_params)
+    @answer.owner = session[:user_email]
 
     respond_to do |format|
       if @answer.save
