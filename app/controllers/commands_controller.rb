@@ -28,6 +28,7 @@ class CommandsController < ApplicationController
   def create
     @command = Command.new(command_params)
     @command.total = 0
+    @command.owner = session[:user_email]
 
     respond_to do |format|
       if @command.save

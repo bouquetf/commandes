@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151229103206) do
+ActiveRecord::Schema.define(version: 20151231135138) do
 
   create_table "answers", force: :cascade do |t|
     t.string   "nickname"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20151229103206) do
     t.decimal  "total",       precision: 8, scale: 2
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "owner"
   end
 
 end
