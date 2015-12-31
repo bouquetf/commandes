@@ -53,4 +53,11 @@ module AuthHelper
     # Email is in the 'preferred_username' field
     email = jwt['preferred_username']
   end
+
+  def check_authent
+    unless session[:user_email]
+      session[:redirect] = request.env['PATH_INFO']
+      redirect_to login_path
+    end
+  end
 end

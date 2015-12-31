@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   end
 
   get "authorize" => "auth#gettoken"
-  get "login" => "auth#login"
+  get "/login", to: "auth#login", as: 'login'
 
 end

@@ -1,5 +1,7 @@
 class CommandsController < ApplicationController
+  include AuthHelper
   before_action :set_command, only: [:show, :edit, :update, :destroy]
+  before_action :check_authent, only: [:new, :create, :edit, :update, :destroy]
 
   # GET /commands
   # GET /commands.json

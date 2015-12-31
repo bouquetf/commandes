@@ -1,6 +1,9 @@
 class AnswersController < ApplicationController
+  include AuthHelper
+
   before_action :set_command
   before_action :set_answer, only: [:show, :edit, :update, :destroy]
+  before_action :check_authent, only: [:new, :create, :edit, :update, :destroy]
 
   # GET /answers
   # GET /answers.json
