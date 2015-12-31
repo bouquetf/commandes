@@ -27,6 +27,7 @@ class CommandsController < ApplicationController
   # POST /commands.json
   def create
     @command = Command.new(command_params)
+    @command.total = 0
 
     respond_to do |format|
       if @command.save
