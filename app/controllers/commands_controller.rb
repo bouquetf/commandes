@@ -6,7 +6,12 @@ class CommandsController < ApplicationController
   # GET /commands
   # GET /commands.json
   def index
+    @commands = Command.today.all
+  end
+
+  def all
     @commands = Command.all
+    render :index
   end
 
   # GET /commands/1

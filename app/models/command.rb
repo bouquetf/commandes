@@ -5,4 +5,6 @@ class Command < ActiveRecord::Base
     self.total = self.answers.where(command_id: self.id).sum(:amount)
     save
   end
+
+  scope :today, -> { where("date > ?", Date.today) }
 end
